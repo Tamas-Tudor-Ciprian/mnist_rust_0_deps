@@ -21,10 +21,10 @@ fn main(){
 	println!("Loaded {} labels", m);
 
 
-	//now I'll try to print the first pixel of the first immage
+	//now I'll try to print the first pixel of the first image
 	//(essentially this is the data I will send to the nn)
 	//its also problably going to be white 99%
-	println!("First pixel of the immage(probably white): {}", images[0]);
+	println!("First pixel of the image(probably white): {}", images[0]);
 	
 	//and also the label (the number it repersents)
 	println!("The label of the first image: {}", labels[0]);

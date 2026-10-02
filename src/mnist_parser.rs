@@ -10,7 +10,7 @@ pub fn read_idx_images(path: & str) -> (u32, u32, u32, Vec<u8>) {
 
 
 	let magic = reader.read_u32::<BigEndian>().unwrap();
-	assert_eq!(magic, 2051, "Not an IDX3 immage file");
+	assert_eq!(magic, 2051, "Not an IDX3 image file");
 
 	let num_images = reader.read_u32::<BigEndian>().unwrap();
 	let rows = reader.read_u32::<BigEndian>().unwrap();
@@ -54,7 +54,7 @@ fn main(){
 	println!("Loaded {} labels", m);
 
 
-	//and to print the first pixel of the first immage
+	//and to print the first pixel of the first image
 	//99% its just white
 	println!("First pixel: {}", images[0]);
 

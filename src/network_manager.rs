@@ -57,8 +57,13 @@ pub fn write_to_file(net : &Network,name : &str, path : &str){
 
 }
 
-/*
 fn get_from_file(path: &str) -> Vec<Connections>{
+
+	let contents = fs::read_to_string(path).expect("Yeah can't read from the file m8");
+	
+	//lets just print the contents for now
+	println!("{The contents of the neural network file are the following:\n}",contents); 
+
 
 	//we have a from Connections constructor we only need to read them from the file
 	
@@ -66,7 +71,6 @@ fn get_from_file(path: &str) -> Vec<Connections>{
 
 
 }
-*/
 
 #[cfg(test)]
 
